@@ -19,7 +19,8 @@ Para fazer o uso basta utilizar o atalho: <kbd>CTRL</kbd> + <kbd>F</kbd> em um S
 
 ***
 # Getting Started
-	
+* [Iniciar o desenvolvimento com NRF](https://devzone.nordicsemi.com/tutorials/) - Nordic Official Page.
+
 	1. Este [link](https://devzone.nordicsemi.com/tutorials/b/getting-started/posts/introduction-to-bluetooth-low-energy-and-ble-devel)
 	contém uma visão geral em torno do BLE. Estes dois vídeos são massivos, em contrapartida muito esclarecedor para quem está começando.
 	Alguns conceitos não foram abordados de maneira detalhada, portanto qualquer dúvida, este é o momento para pesquisar.
