@@ -111,7 +111,7 @@ Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://
 ### Aumentar a quantidade de Dados enviados em um Advertise Packet
 
 - Crie uma nova variável do tipo "ble_advdata_manuf_data_t" chamada "manuf_data_response".
-- Popule a variável "manuf_data_response" com os dados utilizados anteriormente (CompanyID, data[],.., se houver dúvidas siga o código  disponível em [Code](Codes).
+- Popule a variável "manuf_data_response" com os dados utilizados anteriormente (CompanyID, data[],.., se houver dúvidas siga o código "chg_adv_pck_moresize_complete" disponível em [Code](Codes/chg_adv_pck_moresize_complete).
 - Crie uma nova variável do tipo "ble_advdata_t" chamada "advdata_response".
 - Popule a variável "advdata_response" com o name_type "BLE_ADVDATA_NO_NAME".
 - Popule a variável "advdata_response" com os novos dados específicos do fabricante (Manufacturer).
