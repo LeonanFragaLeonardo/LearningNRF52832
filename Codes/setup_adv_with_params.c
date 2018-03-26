@@ -9,6 +9,9 @@ void setup_advertising(){
   uint8_t adv_data[15] = {0x07,0x09,0x4E,0x6F,0x72,0x64,0x69,0x63,0x02,0x01,0x04,0x03,0x03,0x0F,0x18};
   
   /*
+  Falta retornar err_code, assim deve-se garantir que o o código retornou uma mensagem de sucesso, 
+  conforme afirma https://devzone.nordicsemi.com/b/blog/posts/bluetooth-smart-and-the-nordics-softdevices-part-1 .
+  Importante ressaltar que o código faz o uso dos packages ble_advertising.c e ble_advdata.c
   Desmembrando o valor "{0x07,0x09,0x4E,0x6F,0x72,0x64,0x69,0x63,0x02,0x01,0x04,0x03,0x03,0x0F,0x18}"
   0x07 = length 7 octets    
   0x09 = AD type Complete Local Name    
