@@ -79,7 +79,7 @@ Portanto, CEs ocorrem de maneira regular, a cada intervalo de tempo e são utili
 
 	- **Private Resolvable. Estes valores são gerados a partir de uma IRK (Identity Resolving Key) e um número aleatório. Este pode ser alterado até mesmo durante o ciclo de vida de uma conexão, dificultando o rastreamento realizado por dispositivos desconhecidos. Apenas dispositivos que tenham um determinado IRK pode resolver este endereço e permitir a identificação do dispositivo.**
 
-	-Private Non-Resolvable. São números aleatórios e não são muito utilizados. (Precisa-se entender melhor o conceito)
+	- Private Non-Resolvable. São números aleatórios e não são muito utilizados. (Precisa-se entender melhor o conceito)
 	
 Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://devzone.nordicsemi.com/f/nordic-q-a/2084/gap-address-types) 
 
