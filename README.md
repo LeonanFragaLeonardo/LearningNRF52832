@@ -20,22 +20,25 @@ Para fazer o uso basta utilizar o atalho: <kbd>CTRL</kbd> + <kbd>F</kbd> em um S
 
 ***
 # Getting Started
-- [Iniciar o desenvolvimento com NRF](https://devzone.nordicsemi.com/tutorials/) - Nordic Official Page.
 
-	1. Este [link](https://devzone.nordicsemi.com/tutorials/b/getting-started/posts/introduction-to-bluetooth-low-energy-and-ble-devel)
+	
+[Iniciar o desenvolvimento com NRF](https://devzone.nordicsemi.com/tutorials/) - Nordic Official Page.
+
+1. Este [link](https://devzone.nordicsemi.com/tutorials/b/getting-started/posts/introduction-to-bluetooth-low-energy-and-ble-devel)
 	contém uma visão geral em torno do BLE. Estes dois vídeos são massivos, em contrapartida muito esclarecedor para quem está começando.
 	Alguns conceitos não foram abordados de maneira detalhada, portanto qualquer dúvida, este é o momento para pesquisar.
 	Abaixo há uma breve explicação no que tange a alguns aspectos que ficaram pouco clarificados.
 	
-		- [Device Manager](#device-manager)
-		- [Button Support Package](#bsp-button-support-package)
-		- [Connection Events](#connection-events)
+	- [Device Manager](#device-manager)
+	- [Button Support Package](#bsp-button-support-package)
+	- [Connection Events](#connection-events)
 	
-	2. Aqui há um [Tutorial](https://devzone.nordicsemi.com/tutorials/b/getting-started/posts/getting-started-with-the-nrf5-development-kit) excelente que explica
-	de maneira sucinta os procedimentos necessário para compilação. Portanto, este tutorial serve apenas para aprender a compilar e não abrange 
-	os conceitos do código. 
-	3. [Este](https://devzone.nordicsemi.com/b/blog/posts/bluetooth-smart-and-the-nordics-softdevices-part-1) tutorial aborda o conceito detalhado de Advertising.
-	4. O seguinte [Tutorial](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/posts/ble-advertising-a-beginners-tutorial) apresenta os conceitos iniciais do BLE em prática, mais específico uma prática sobre **advertising**. O código disponível é referente ao modelo nrf51 e por este motivo não foi possível compilar o exemplo, mas o código está comentado e o tutorial explica mais alguns conceitos básicos, portanto mesmo não compilado é possível melhorar o conhecimento com este tutorial. 
+2. Aqui há um [Tutorial](https://devzone.nordicsemi.com/tutorials/b/getting-started/posts/getting-started-with-the-nrf5-development-kit) excelente que explica de maneira sucinta os procedimentos necessário para compilação. 
+Portanto, este tutorial serve apenas para aprender a compilar e não abrange os conceitos do código. 
+
+3. [Este](https://devzone.nordicsemi.com/b/blog/posts/bluetooth-smart-and-the-nordics-softdevices-part-1) tutorial aborda o conceito detalhado de Advertising.
+
+4. O seguinte [Tutorial](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/posts/ble-advertising-a-beginners-tutorial) apresenta os conceitos iniciais do BLE em prática, mais específico uma prática sobre **advertising**. O código disponível é referente ao modelo nrf51 e por este motivo não foi possível compilar o exemplo, mas o código está comentado e o tutorial explica mais alguns conceitos básicos, portanto mesmo não compilado é possível melhorar o conhecimento com este tutorial. 
 	
 ***
 # Some Concepts
