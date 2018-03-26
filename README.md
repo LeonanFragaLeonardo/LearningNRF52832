@@ -70,6 +70,19 @@ O início de um CE é chamado de ponto de ancoragem (AP – do inglês Anchor Po
 Portanto, CEs ocorrem de maneira regular, a cada intervalo de tempo e são utilizados para transmitir dados, em contrapartida podem ser ignorados pelo Slave sem que o Master assuma um fim de conexão.
 ***
 
+## Bluetooth Address Type.
+
+* Um endereço Bluetooth pode ser de 4 tipos distintos, conforme explicado a seguir:
+ 
+	- Public. É um endereço fixo e global, ou seja, não deve mudar nunca durante o ciclo de vida do dispositivo. Ele deve ser registrado na IEEE Registration Authority. 
+	- Random Static. É um número aleatório que pode ser gerado cada vez que dispositivo é iniciado ou pode ser mantido um mesmo valor durante o ciclo de vida do dispositivo. Importante ressaltar que ele não pode ser alterado dentro de um único ciclo de vida.
+
+	- **Private Resolvable. Estes valores são gerados a partir de uma IRK (Identity Resolving Key) e um número aleatório. Este pode ser alterado até mesmo durante o ciclo de vida de uma conexão, dificultando o rastreamento realizado por dispositivos desconhecidos. Apenas dispositivos que tenham um determinado IRK pode resolver este endereço e permitir a identificação do dispositivo.**
+
+	-Private Non-Resolvable. São números aleatórios e não são muito utilizados. (Precisa-se entender melhor o conceito)
+	
+Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://devzone.nordicsemi.com/f/nordic-q-a/2084/gap-address-types) 
+
 ## Extras
 *
 	[Programando comandos no KeilUVision](https://devzone.nordicsemi.com/b/blog/posts/keil-nrfjprog-true).
