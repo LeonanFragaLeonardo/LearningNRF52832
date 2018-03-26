@@ -73,6 +73,7 @@ Portanto, CEs ocorrem de maneira regular, a cada intervalo de tempo e são utili
 ## Extras
 *
 	[Programando comandos no KeilUVision](https://devzone.nordicsemi.com/b/blog/posts/keil-nrfjprog-true).
+	[Implementação de Alguns recursos com NRF52](https://github.com/NordicPlayground/nrf52-hardware-startup-hands-on).
 ***
 
 ## Erros
