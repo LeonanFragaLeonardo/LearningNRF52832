@@ -102,11 +102,11 @@ Portanto, CEs ocorrem de maneira regular, a cada intervalo de tempo e são utili
 Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://devzone.nordicsemi.com/f/nordic-q-a/2084/gap-address-types) 
 
 ## Extras
-* Links
+### Links
 
-	[Programando comandos no KeilUVision](https://devzone.nordicsemi.com/b/blog/posts/keil-nrfjprog-true).
+* [Programando comandos no KeilUVision](https://devzone.nordicsemi.com/b/blog/posts/keil-nrfjprog-true).
 	
-	[Implementação de Alguns recursos com NRF52](https://github.com/NordicPlayground/nrf52-hardware-startup-hands-on).
+* [Implementação de Alguns recursos com NRF52](https://github.com/NordicPlayground/nrf52-hardware-startup-hands-on).
 	
 ### Aumentar a quantidade de Dados enviados em um Advertise Packet
 
