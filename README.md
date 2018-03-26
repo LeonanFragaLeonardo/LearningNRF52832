@@ -102,9 +102,23 @@ Portanto, CEs ocorrem de maneira regular, a cada intervalo de tempo e são utili
 Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://devzone.nordicsemi.com/f/nordic-q-a/2084/gap-address-types) 
 
 ## Extras
-*
+* Links
+
 	[Programando comandos no KeilUVision](https://devzone.nordicsemi.com/b/blog/posts/keil-nrfjprog-true).
+	
 	[Implementação de Alguns recursos com NRF52](https://github.com/NordicPlayground/nrf52-hardware-startup-hands-on).
+	
+### Aumentar a quantidade de Dados enviados em um Advertise Packet
+
+- Crie uma nova variável do tipo "ble_advdata_manuf_data_t" chamada "manuf_data_response".
+- Popule a variável "manuf_data_response" com os dados utilizados anteriormente (CompanyID, data[],.., se houver dúvidas siga o código em [Code](Code).
+- Crie uma nova variável do tipo "ble_advdata_t" chamada "advdata_response".
+- Popule a variável "advdata_response" com o name_type "BLE_ADVDATA_NO_NAME".
+- Popule a variável "advdata_response" com os novos dados específicos do fabricante (Manufacturer).
+- Altere a linha de código 
+	err_code = ble_advertising_init(&advdata, NULL, &options, on_adv_evt, NULL);
+  para:
+	err_code = ble_advertising_init(&advdata, advdata_response, &options, on_adv_evt, NULL);
 ***
 
 ## Erros
