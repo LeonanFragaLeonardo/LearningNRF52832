@@ -115,4 +115,4 @@ Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://
 	Flag field: Length (1), type (1), flag(1) = 3 bytes
 	16-bit Service Class UUID: Length(1), type(1), UUID(2) = 4 bytes
 	Manufacturer Specific: Lenght(1), type(1), company ID(2), data(10) = 14 bytes.
-este foi um problema notado nesta [resposta](https://devzone.nordicsemi.com/f/nordic-q-a/7066/setting-tx_power_level/24976#24976)
+este foi um problema notado na [resposta](https://devzone.nordicsemi.com/f/nordic-q-a/7066/setting-tx_power_level/24976#24976) de MartinBL marcada como solução.
