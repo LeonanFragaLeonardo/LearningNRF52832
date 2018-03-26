@@ -110,3 +110,9 @@ Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://
 ## Erros
 
 * Ao realizar o tutorial (2.) referente à compilação do projeto UART, aparece a seguinte mensagem de erro: "error:flash downloaded failed - could not load file..", mesmo após executar os comandos --eraseall e --program na linha de comando não resolveu, algumas pessoas disseram que executar o "eraseall" pelo nRFGO Studio resolveria o problema, mas acredito que a versão do SDK (15.0.0) que estava utilizando era muito recente e alguns packages ainda não estavam disponíveis, fiz o downgrade para (14.2.0) e funcionou corretamente.
+* Ao realizar o tutorial (3.) pode-se perceber um erro comum, adicionar muitas informações no Advertising Packet pode estourar o limite de bytes. Este problema ocorreu com um desenvolvedor e uma possível solução foi tentar diminuir o tamanho da informação, que ficou da seguinte forma: 
+	Device name field: 8 bytes
+	Flag field: Length (1), type (1), flag(1) = 3 bytes
+	16-bit Service Class UUID: Length(1), type(1), UUID(2) = 4 bytes
+	Manufacturer Specific: Lenght(1), type(1), company ID(2), data(10) = 14 bytes.
+este foi um problema notado nesta [resposta](https://devzone.nordicsemi.com/f/nordic-q-a/7066/setting-tx_power_level/24976#24976)
