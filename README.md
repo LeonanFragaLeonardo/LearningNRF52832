@@ -14,6 +14,7 @@ O conteúdo dos items são tutoriais relacionados ao desenvolvimento de aplicaç
 Grande parte dos tutoriais utilizados foram retirados do site oficial da [Nordic](https://devzone.nordicsemi.com/tutorials/). 
 
 # How to
+
 Esta lista tem como propósito auxiliar os desenvolvedores que queiram aprender a desenvolver aplicações utilizando o módulo NRF52.
 Para fazer o uso basta utilizar o atalho: <kbd>CTRL</kbd> + <kbd>F</kbd> em um SO Windows ou <kbd>command</kbd> + <kbd>F</kbd> em um Windows 
 
@@ -35,7 +36,7 @@ Para fazer o uso basta utilizar o atalho: <kbd>CTRL</kbd> + <kbd>F</kbd> em um S
 	os conceitos do código. 
 	
 	3. 
-
+***
 # Some Concepts
 
 ## Device Manager
@@ -50,12 +51,12 @@ Para fazer o uso basta utilizar o atalho: <kbd>CTRL</kbd> + <kbd>F</kbd> em um S
 	- **Bonding Information** é a informação trocada entre o dispositivo local e o dispositivo de ponta (o par, peer) para estabelecer um vínculo. Ele também inclui informações de identificação peer, como endereço ou IRK ou ambos. Esta categoria de informação é relacionada a Informações de Contexto do Dispositivo (Device Context).
 	- **Service/Protocol Information** é a informação mantida para o peer objetivando economizar em procedimentos únicos como os procedimentos de Descoberta de Serviços GATT e Configurações de Serviços. Este permite que os dispositivos retomem a troca de dados em uma reconexão subsequente sem ter que executar os procedimentos iniciais de configuração a cada vez em que for necessário. Esta categoria de informação está relacionada Contexto de Serviço (Service Context);
 	- **Application Information** é a informação de contexto em que a aplicação gostaria de associar com cada dispositivo vinculado. For exemplo se uma aplicação escolhe fazer um rank para gerenciar os melhores, a informação do rank deve ser tratada como uma Application Information. Este espaço de armazenamento é fornecido para poupar a aplicação de manter uma tabela de mapeamento entre Instancia do Dispositivo e Application Information. Contudo, se a aplicação não tenha que fazer o uso deste recurso, é possível não usá-lo ou empregar isso em tempo de compilação. Esta categoria de informação está relacionada com o Contexto da Aplicação (Application Context).
-	
+***	
 ## BSP – Button Support Package
 
 Este modulo é utilizado para lidar com LEDs e Botões.  
 Ele fornece uma camada de abstração da placa. Também permite aos usuários indicarem determinados estados nos LEDs de uma maneira simples. 
-
+***
 ## CE - Connection Events
 
 Connection Event (CE) é o tempo cronometrado dentro de um evento reservado para enviar e receber pacotes.
@@ -67,8 +68,9 @@ Durante um CE, o Master e o Slave alternam pacotes de envio e recebimento.
 O CE pode ser fechado por qualquer device.
 O início de um CE é chamado de ponto de ancoragem (AP – do inglês Anchor Point). No AP, o Master deve começar a transmitir Data Channel PDU para o Slave. O inicio de um CE são espaçados de forma regular com um interval de connInterval e não deve se sobrepor. O Slave ouve por pacotes enviados pelo máster no AP. 
 Portanto, CEs ocorrem de maneira regular, a cada intervalo de tempo e são utilizados para transmitir dados, em contrapartida podem ser ignorados pelo Slave sem que o Master assuma um fim de conexão.
+***
 
-
-# Extras
-
-	1. [Programando comandos no KeilUVision](https://devzone.nordicsemi.com/b/blog/posts/keil-nrfjprog-true)
+## Extras
+*
+	[Programando comandos no KeilUVision](https://devzone.nordicsemi.com/b/blog/posts/keil-nrfjprog-true).
+***
