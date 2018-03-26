@@ -35,7 +35,7 @@ Para fazer o uso basta utilizar o atalho: <kbd>CTRL</kbd> + <kbd>F</kbd> em um S
 	de maneira sucinta os procedimentos necessário para compilação. Portanto, este tutorial serve apenas para aprender a compilar e não abrange 
 	os conceitos do código. 
 	
-	3. 
+	3. O seguinte [Tutorial](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/posts/ble-advertising-a-beginners-tutorial) apresenta os conceitos iniciais do BLE em prática. O código disponível é referente ao modelo nrf51 e por este motivo não foi possível compilar o exemplo, mas o código está comentado e o tutorial explica mais alguns conceitos básicos, portanto mesmo não compilado é possível melhorar o conhecimento com este tutorial. 
 ***
 # Some Concepts
 
