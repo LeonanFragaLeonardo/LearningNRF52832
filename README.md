@@ -71,4 +71,4 @@ Portanto, CEs ocorrem de maneira regular, a cada intervalo de tempo e são utili
 
 # Extras
 
-	1. [Programando comandos no Keil UVision](https://devzone.nordicsemi.com/b/blog/posts/keil-nrfjprog-true)
+	1. [Programando comandos no KeilUVision](https://devzone.nordicsemi.com/b/blog/posts/keil-nrfjprog-true)
