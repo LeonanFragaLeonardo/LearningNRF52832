@@ -19,7 +19,7 @@ Para fazer o uso basta utilizar o atalho: <kbd>CTRL</kbd> + <kbd>F</kbd> em um S
 
 ***
 # Getting Started
-* [Iniciar o desenvolvimento com NRF](https://devzone.nordicsemi.com/tutorials/) - Nordic Official Page.
+- [Iniciar o desenvolvimento com NRF](https://devzone.nordicsemi.com/tutorials/) - Nordic Official Page.
 
 	1. Este [link](https://devzone.nordicsemi.com/tutorials/b/getting-started/posts/introduction-to-bluetooth-low-energy-and-ble-devel)
 	contém uma visão geral em torno do BLE. Estes dois vídeos são massivos, em contrapartida muito esclarecedor para quem está começando.
@@ -67,3 +67,8 @@ Durante um CE, o Master e o Slave alternam pacotes de envio e recebimento.
 O CE pode ser fechado por qualquer device.
 O início de um CE é chamado de ponto de ancoragem (AP – do inglês Anchor Point). No AP, o Master deve começar a transmitir Data Channel PDU para o Slave. O inicio de um CE são espaçados de forma regular com um interval de connInterval e não deve se sobrepor. O Slave ouve por pacotes enviados pelo máster no AP. 
 Portanto, CEs ocorrem de maneira regular, a cada intervalo de tempo e são utilizados para transmitir dados, em contrapartida podem ser ignorados pelo Slave sem que o Master assuma um fim de conexão.
+
+
+# Extras
+
+	1. [Programando comandos no Keil UVision](https://devzone.nordicsemi.com/b/blog/posts/keil-nrfjprog-true)
