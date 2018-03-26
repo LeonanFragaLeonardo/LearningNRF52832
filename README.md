@@ -108,6 +108,8 @@ Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://
 * [Programando comandos no KeilUVision](https://devzone.nordicsemi.com/b/blog/posts/keil-nrfjprog-true).
 	
 * [Implementação de Alguns recursos com NRF52](https://github.com/NordicPlayground/nrf52-hardware-startup-hands-on).
+
+* [Lista de Advertise Data Types](https://www.bluetooth.com/specifications/assigned-numbers/generic-access-profile)
 	
 ### Aumentar a quantidade de Dados enviados em um Advertise Packet
 
