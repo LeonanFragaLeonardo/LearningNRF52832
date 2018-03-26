@@ -46,7 +46,7 @@ Existem dois tipos de pacotes de dados que podem ser transmitidos, pacotes Adver
 
 Para poupar energia, quando não esperamos uma conexão e não temos dados extras no scan response packet, basta emitir um “advertise” como non-connectable mode e o processo de RX é evitado, economizando energia.
 
-O único pacote que o scanner ativo pode enviar para o anunciante(advertiser) é o pacote de requisição de consulta, que por sua vez contém apenas o endereço do scanner. O examinador/varredor(scanner) passivo não pode fazer requisições de scan. A seguir são listados 3 tipos de advertising.
+O único pacote que o scanner ativo pode enviar para o anunciante(advertiser) é o pacote de requisição de consulta, que por sua vez contém apenas o endereço do scanner. O examinador/varredor(scanner) passivo não pode fazer requisições de scan. A seguir são listados 4 tipos de advertising.
 
 ### Types
 * **ADV_IND**: connectable undirected advertising. Este é o tipo comum de anuncio, onde algum dispositivo pode enviar pacotes de resposta de varredura e conectar ao pedido do anunciante. Por exemplo: Dispositivo liga o bluetooh e avisa que está apto a ser encontrado.
