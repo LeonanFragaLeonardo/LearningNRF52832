@@ -113,6 +113,8 @@ Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://
 * [Implementação de Alguns recursos com NRF52](https://github.com/NordicPlayground/nrf52-hardware-startup-hands-on).
 
 * [Lista de Advertise Data Types](https://www.bluetooth.com/specifications/assigned-numbers/generic-access-profile)
+
+* [Converter Projeto Keil para o Segger](https://devzone.nordicsemi.com/b/blog/posts/segger-embedded-studio-a-cross-platform-ide)
 	
 ### Aumentar a quantidade de Dados enviados em um Advertise Packet
 
