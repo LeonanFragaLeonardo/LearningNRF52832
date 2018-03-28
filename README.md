@@ -115,6 +115,8 @@ Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://
 * [Lista de Advertise Data Types](https://www.bluetooth.com/specifications/assigned-numbers/generic-access-profile)
 
 * [Converter Projeto Keil para o Segger](https://devzone.nordicsemi.com/b/blog/posts/segger-embedded-studio-a-cross-platform-ide)
+
+* [Tutorial de como Criar um Custom BLE Service](https://github.com/bjornspockeli/custom_ble_service_example)
 	
 ### Aumentar a quantidade de Dados enviados em um Advertise Packet
 
