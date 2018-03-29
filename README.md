@@ -110,7 +110,19 @@ Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://
  O protocolo BLE é construído sob um número de camadas, conforme mostra a Figura 1. A camada de aplicação é construida sob o GATT, que por sua vez é construído sob o ATT. O Att é baseado numa relação Cliente-Servidor, onde o servidor mantém informações como o valor dos sensores, dados de posição e o estado em que se encontra o dispositivo. Esta informação é organizada em uma tabela a qual é definida como sendo uma **tabela de atributos** . Cada atributo dentro da tabela é um valor ou uma parte da informação com algumas propriedades associadas. Portanto, quando um client necessita dos valor de um sensor, ele consulta uma linha da tabela, por exemplo para consultar o valor do sensor de temperatura, ele consulta a linha 17 na tabela. 
  
  ![alt text](https://devzone.nordicsemi.com/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-00-12-DZ-17/Layer-model.png). 
+ 
  Figura 1. Protocolo BLE. 
+ 
+ Um exemplo da tabela de atributos pode ser visto no Quadro 1, o qual é um exemplo de uma aplicação comum. Este quadro está relacionado ao Hear Rate Profile. Os valores presentes na coluna Attribute permission não pode ser acessado usando o ATT.
+ 
+ ![alt text](https://devzone.nordicsemi.com/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-00-12-DZ-17/Attribute-table.png)
+ 
+ Quadro 1. Tabela de atributos.
+ 
+ 
+ 
+ 
+ 
  
   
 
