@@ -119,6 +119,12 @@ Em outras palavras, um serviço é uma coleção de informações como exemplo, 
  A BCS define Characteristic como sendo um valor utilizando em serviço juntamente com propriedades e informações no que diz respeito a como o valor é acessado, bem como apresentado.
  EM linhas gerias, a characteristic é o local onde os valores e a informações atuais são apresentados. Parâmetros de segurança, unidades e outros metadados referentes às informações também são encapsulados nas characteristics. Uma abstração das characteristics pode ser uma sala repleta de armários e cada armário tem várias gavetas. Pensando assim, O GATT seria a sala, os armários são os serviços e as gavetas são characteristcs que contém várias informações. Algumas gavetas podem conter restrições ou "configurações" de acesso à informação ali contida.
  
+### Universally Unique ID (UUID)
+
+Um UUID é uma abreviação para Universally Unique ID (Identificador Unico Universal, ou ainda ID universalmente único) e significa que é um número único usado para identificação de ***services***, ***characteristics*** e ***descriptors***, também são conhecidos como ***attributes***. Estes IDs são transmitidos pelo ar ede modo que um ***peripheral*** pode informar uma ***central*** quais ***services*** ela fornece. Para economizar tempo de transmissão e memória, há dois tipos de UUIDs:
+ - O primeiro é UUID do tipo short de 16-bits. O Heart rate service por exemplo, tem o UUID "0X180D" (0001 1000 0000 1101, esta é a representação binária de 16 bits do UUID). Este tipo é mais eficiente no que tange à memória e energia, no entanto, como é fornecido um número limitado de IDs exclusivos, há uma regra que infere diretamente na maneira como a transmissão dos UUIDs devem ser realizadas. A transmissão de UUIDs BSIG predefinido deve ser realizada apenas pelo ar. 
+ - O segundo tipo é um UUID de 128 bits, algumas vezes é referenciado como ***Vendor Specific UUID***. Este tipo de UUID é necessário utilizar quando é desenvolvido ***Custom Services *** e ***Custom Characteristics***, ou seja, quando é necessário desenvolver um service personalizado com suas respectivas characteristics. Um exemplo de "base UUID" é o seguinte valor: "96F3####-D80A-41DB-B9C9-F5F9CF289A98" onde os valores "####" representam um campo onde será inserido o UUID de 16 bits para os custom services e suas characteristics. Este valor pode ser gerado pelo nRFGO Studio, basta ir no menu de ajuda e pesquisar sobre UUID.
+ 
 Fonte: [Nordic](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/posts/ble-services-a-beginners-tutorial)
 
 ## Attribute Protocol (ATT) e Generic Attribute Profile (GATT)
@@ -140,7 +146,6 @@ Fonte: [Nordic](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/
  
  ### Attribute Handles
  O ***attribute handle*** identifica de maneira exclusiva um atributo em um servidor permitindo que um cliente faça referencia ao atributo em requisições de leitura ou escrita. Em linhas gerais, o handle pode ser considerado o número da linha dentro da tabela de atributos, contudo o handle pode não ser sequencial. Os handles são estruturas numérica de 16-bit. O SoftDevice faz o uso constante dos handles para referenciar uma vasta gama de atributos. Para um programador, esta é uma maneira eficaz de passar valores e informações entre funções. Isso facilita o rastreamento de atributos e obtenção de informações necessárias pela aplicação. O número de handles varia dependendo de quantos atributos há na aplicação.
- 
  
  
  
