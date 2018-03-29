@@ -105,7 +105,22 @@ Portanto, CEs ocorrem de maneira regular, a cada intervalo de tempo e são utili
 	
 Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://devzone.nordicsemi.com/f/nordic-q-a/2084/gap-address-types) 
 
+## Services e Characteristics
+
+### Services
+
+Por definição da BCS, um serviço é uma coleção de dados e comportamentos associados para realizar uma função ou um recurso particular.
+Em outras palavras, um serviço é uma coleção de informações como exemplo, valores de sensores. Há uma associação chamada Bluetooth Special Interest Group (Bluetooth SIG) em que contém serviços pré-definidos como exemplo, Heart Rate Service e alguns outros que por sua vez são acompanhados de uma documentação bem definida. Esta definição tem como propósito facilitar o desenvolvimento de aplicações e firmwares compatíveis com os serviços disponíveis no Bluetooth SIG. Portanto, este é um recurso que objetiva facilitar alguns conceitos, mas é possível desenvolver um serviço personalizado que não está definido na Bluetooth SIG.
+
+Fonte: [Nordic](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/posts/ble-services-a-beginners-tutorial)
 ## Attribute Protocol (ATT) e Generic Attribute Profile (GATT)
+
+### Characteristics
+
+ A BCS define Characteristic como sendo um valor utilizando em serviço juntamente com propriedades e informações no que diz respeito a como o valor é acessado, bem como apresentado.
+ EM linhas gerias, a characteristic é o local onde os valores e a informações atuais são apresentados. Parâmetros de segurança, unidades e outros metadados referentes às informações também são encapsulados nas characteristics. Uma abstração das characteristics pode ser uma sala repleta de armários e cada armário tem várias gavetas. Pensando assim, O GATT seria a sala, os armários são os serviços e as gavetas são characteristcs que contém várias informações. Algumas gavetas podem conter restrições ou "configurações" de acesso à informação ali contida.
+
+### Attribute Protocol
 
  O protocolo BLE é construído sob um número de camadas, conforme mostra a Figura 1. A camada de aplicação é construida sob o GATT, que por sua vez é construído sob o ATT. O Att é baseado numa relação Cliente-Servidor, onde o servidor mantém informações como o valor dos sensores, dados de posição e o estado em que se encontra o dispositivo. Esta informação é organizada em uma tabela a qual é definida como sendo uma **tabela de atributos** . Cada atributo dentro da tabela é um valor ou uma parte da informação com algumas propriedades associadas. Portanto, quando um client necessita dos valor de um sensor, ele consulta uma linha da tabela, por exemplo para consultar o valor do sensor de temperatura, ele consulta a linha 17 na tabela. 
  
@@ -119,12 +134,18 @@ Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://
  
  Quadro 1. Tabela de atributos.
  
+ ### Attribute Handles
+ O ***attribute handle*** identifica de maneira exclusiva um atributo em um servidor permitindo que um cliente faça referencia ao atributo em requisições de leitura ou escrita. Em linhas gerais, o handle pode ser considerado o número da linha dentro da tabela de atributos, contudo o handle pode não ser sequencial. Os handles são estruturas numérica de 16-bit. O SoftDevice faz o uso constante dos handles para referenciar uma vasta gama de atributos. Para um programador, esta é uma maneira eficaz de passar valores e informações entre funções. Isso facilita o rastreamento de atributos e obtenção de informações necessárias pela aplicação. O número de handles varia dependendo de quantos atributos há na aplicação.
  
  
  
  
+ ### GATT
+  A BCS define GATT como sendo uma estrutura em que profile datas são trocados. Esta estrutura define elementos básicos como serviços e características utilizados em um profile.
+  Em linhas gerais, GATT é um conjunto de regras que descreve como agrupar, apresentar e transferir dados usando o BLE.**ler a BCS a respeito de GATT Vol.3 Part G**
  
-  
+ Fonte: [Nordic](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/posts/ble-services-a-beginners-tutorial) e [BCS](https://www.bluetooth.org/en-us/specification/adopted-specifications)
+
 
 ## Extras
 ### Links
