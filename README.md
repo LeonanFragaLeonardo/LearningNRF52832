@@ -118,10 +118,10 @@ Em outras palavras, um serviço é uma coleção de informações como exemplo, 
 
  A BCS define Characteristic como sendo um valor utilizando em serviço juntamente com propriedades e informações no que diz respeito a como o valor é acessado, bem como apresentado.
  EM linhas gerias, a characteristic é o local onde os valores e a informações atuais são apresentados. Parâmetros de segurança, unidades e outros metadados referentes às informações também são encapsulados nas characteristics. Uma abstração das characteristics pode ser uma sala repleta de armários e cada armário tem várias gavetas. Pensando assim, O GATT seria a sala, os armários são os serviços e as gavetas são characteristcs que contém várias informações. Algumas gavetas podem conter restrições ou "configurações" de acesso à informação ali contida.
-## Attribute Protocol (ATT) e Generic Attribute Profile (GATT)
-
+ 
 Fonte: [Nordic](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/posts/ble-services-a-beginners-tutorial)
 
+## Attribute Protocol (ATT) e Generic Attribute Profile (GATT)
 
 
 ### Attribute Protocol
