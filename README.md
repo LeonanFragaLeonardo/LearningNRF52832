@@ -107,18 +107,22 @@ Este conteúdo tem como base a resposta de Carles no [Fórum da Nordic](https://
 
 ## Services e Characteristics
 
+ Os serviços e as characteristics existem como uma maneira de obter flexibilidade, eficacia, compatibilidade entre diferentes plataformas e facilitar a implementação. Por exemplo, quando há um dispositivo fazendo advertising de um Heart Rate Service, e uma plataforma como Android ou iOS detectam este serviço, é garantido que será apresentado um valor padronizado referente à medida dos batimentos cardíacos. Se um dispositivo contém mais que um serviço, é possível selecionar as informações desejadas de qualquer serviço apresentado. Agrupando informações seguindo este princípio, os dispositivos podem descobrir quais informações estão disponíveis e realizar a comunicação apenas no que cabe à aplicação, poupando tempo e consumo energético.
+
 ### Services
 
 Por definição da BCS, um serviço é uma coleção de dados e comportamentos associados para realizar uma função ou um recurso particular.
 Em outras palavras, um serviço é uma coleção de informações como exemplo, valores de sensores. Há uma associação chamada Bluetooth Special Interest Group (Bluetooth SIG) em que contém serviços pré-definidos como exemplo, Heart Rate Service e alguns outros que por sua vez são acompanhados de uma documentação bem definida. Esta definição tem como propósito facilitar o desenvolvimento de aplicações e firmwares compatíveis com os serviços disponíveis no Bluetooth SIG. Portanto, este é um recurso que objetiva facilitar alguns conceitos, mas é possível desenvolver um serviço personalizado que não está definido na Bluetooth SIG.
 
-Fonte: [Nordic](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/posts/ble-services-a-beginners-tutorial)
-## Attribute Protocol (ATT) e Generic Attribute Profile (GATT)
-
 ### Characteristics
 
  A BCS define Characteristic como sendo um valor utilizando em serviço juntamente com propriedades e informações no que diz respeito a como o valor é acessado, bem como apresentado.
  EM linhas gerias, a characteristic é o local onde os valores e a informações atuais são apresentados. Parâmetros de segurança, unidades e outros metadados referentes às informações também são encapsulados nas characteristics. Uma abstração das characteristics pode ser uma sala repleta de armários e cada armário tem várias gavetas. Pensando assim, O GATT seria a sala, os armários são os serviços e as gavetas são characteristcs que contém várias informações. Algumas gavetas podem conter restrições ou "configurações" de acesso à informação ali contida.
+## Attribute Protocol (ATT) e Generic Attribute Profile (GATT)
+
+Fonte: [Nordic](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/posts/ble-services-a-beginners-tutorial)
+
+
 
 ### Attribute Protocol
 
