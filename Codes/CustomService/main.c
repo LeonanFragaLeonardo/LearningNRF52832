@@ -1,4 +1,5 @@
 
+/* Includes*/
 #include <stdbool.h>
 #include <stdint.h>
 #include <string.h>
@@ -30,6 +31,7 @@
 
 #include "ble_cus.h"
 
+/* Default defines */
 #define DEVICE_NAME                     "Nordic_Template"                       /**< Name of device. Will be included in the advertising data. */
 #define MANUFACTURER_NAME               "NordicSemiconductor"                   /**< Manufacturer. Will be passed to Device Information Service. */
 #define APP_ADV_INTERVAL                300                                     /**< The advertising interval (in units of 0.625 ms. This value corresponds to 187.5 ms). */
@@ -74,8 +76,8 @@ static ble_uuid_t m_adv_uuids[] =                                               
 {
     {CUSTOM_SERVICE_UUID, BLE_UUID_TYPE_VENDOR_BEGIN}
 };
-...
-*/
+/*  ... */
+
 
 /**@brief Function for initializing services that will be used by the application.
  */
@@ -94,10 +96,10 @@ static void services_init(void)
     APP_ERROR_CHECK(err_code);
 }
 
-...
+/*...*/
 /**@brief Function for application main entry.
  */
-...
+/*...*/
 int main(void)
 {
     bool erase_bonds;
