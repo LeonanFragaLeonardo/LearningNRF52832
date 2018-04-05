@@ -168,6 +168,8 @@ Fonte: [Nordic](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/
 * [Converter Projeto Keil para o Segger](https://devzone.nordicsemi.com/b/blog/posts/segger-embedded-studio-a-cross-platform-ide)
 
 * [Tutorial de como Criar um Custom BLE Service](https://github.com/bjornspockeli/custom_ble_service_example)
+
+* [Entendendo o que são Fixed Points, ex: "2Q30"](https://pt.scribd.com/document/98529714/Fixed-Point-Conversion)
 	
 ### Aumentar a quantidade de Dados enviados em um Advertise Packet
 
