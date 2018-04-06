@@ -184,6 +184,10 @@ Fonte: [Nordic](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/
 	err_code = ble_advertising_init(&advdata, advdata_response, &options, on_adv_evt, NULL);
 ***
 
+### Segurança
+	
+- Ver [neste tutorial](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/posts/ble-characteristics-a-beginners-tutorial) nos desafios do Step 2.H
+
 ## Erros
 
 * Ao realizar o tutorial (2.) referente à compilação do projeto UART, aparece a seguinte mensagem de erro: "error:flash downloaded failed - could not load file..", mesmo após executar os comandos --eraseall e --program na linha de comando não resolveu, algumas pessoas disseram que executar o "eraseall" pelo nRFGO Studio resolveria o problema, mas acredito que a versão do SDK (15.0.0) que estava utilizando era muito recente e alguns packages ainda não estavam disponíveis, fiz o downgrade para (14.2.0) e funcionou corretamente.
