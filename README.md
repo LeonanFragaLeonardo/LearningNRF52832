@@ -197,3 +197,8 @@ Fonte: [Nordic](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/
 	16-bit Service Class UUID: Length(1), type(1), UUID(2) = 4 bytes
 	Manufacturer Specific: Lenght(1), type(1), company ID(2), data(10) = 14 bytes.
 este foi um problema notado na [resposta](https://devzone.nordicsemi.com/f/nordic-q-a/7066/setting-tx_power_level/24976#24976) de MartinBL marcada como solução.
+* Ao tentar alterar o valor da Caracteristica Device Name, ela não alterava. A solução encontrada foi na linha de inicialização do valor máximo do tamanho do valor da caracteristica "attr_char_value.max_len".
+	Este valor estava com uma constante, por exemplo:
+		attr_char_value.max_len = 20;
+	Quando alterado para para o tamanho da struct, o erro foi corrigido, ficando assim.
+		attr_char_value.max_len = sizeof(ble_wcs_dev_name_t);
