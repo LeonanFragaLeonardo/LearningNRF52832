@@ -170,6 +170,8 @@ Fonte: [Nordic](https://devzone.nordicsemi.com/tutorials/b/bluetooth-low-energy/
 * [Tutorial de como Criar um Custom BLE Service](https://github.com/bjornspockeli/custom_ble_service_example)
 
 * [Entendendo o que são Fixed Points, ex: "2Q30"](https://pt.scribd.com/document/98529714/Fixed-Point-Conversion)
+
+* [Forum a respeito de redução de consumo de energia](https://devzone.nordicsemi.com/f/nordic-q-a/15650/nrf52832-sleep-current-consumption-with-accelerometer)
 	
 ### Aumentar a quantidade de Dados enviados em um Advertise Packet
 
