@@ -204,3 +204,5 @@ este foi um problema notado na [resposta](https://devzone.nordicsemi.com/f/nordi
 		attr_char_value.max_len = 20;
 	Quando alterado para para o tamanho da struct, o erro foi corrigido, ficando assim.
 		attr_char_value.max_len = sizeof(ble_wcs_dev_name_t);
+		
+* Ao criar dois serviços e tentar fazer o advertising deles, o tamanho do pacote ultrapassa 31 bytes permitidos pelo pacote de advertising. O que causa um erro. Uma solução é fazer o advertising como scan response ou tirar o serviço do advertising e colocar no connect.
